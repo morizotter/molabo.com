@@ -4,7 +4,11 @@ import Main from './Main';
 
 import appsData from './Data/Apps';
 
+const mainInfoData = {
+  apps: appsData,
+};
+
 ReactDOM.render(
-  <Main apps={appsData} />,
+  <Main mainInfo={mainInfoData} />,
   document.getElementById('app')
 );

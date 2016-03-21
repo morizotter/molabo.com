@@ -5,9 +5,9 @@ import AppList from './AppList/AppList';
 import Footer from './Footer';
 
 const propTypes = {
-  apps: React.PropTypes.arrayOf(
-    React.PropTypes.any.isRequired
-  ).isRequired,
+  mainInfo: React.PropTypes.shape({
+    apps: React.PropTypes.array.isRequired,
+  }).isRequired,
 };
 
 class Main extends React.Component {
@@ -19,7 +19,7 @@ class Main extends React.Component {
     return (
       <div>
         <Header />
-        <AppList apps={this.props.apps} />
+        <AppList apps={this.props.mainInfo.apps} />
         <Footer />
       </div>
     );
