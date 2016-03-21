@@ -1,5 +1,5 @@
 import React from 'react';
-import App from './App';
+import AppItem from './AppItem';
 
 const apps = [
   {
@@ -23,8 +23,8 @@ const apps = [
 ];
 
 export default function AppList() {
-  const appNodes = apps.map((app) =>
-    <App name={app.info.name} key={app.key} />
+  const appItems = apps.map((app) =>
+    <AppItem info={app.info} key={app.key} />
   );
 
   apps.forEach((app) => {
@@ -33,7 +33,7 @@ export default function AppList() {
 
   return (
     <div className="apps">
-      { appNodes }
+      { appItems }
     </div>
   );
 }
