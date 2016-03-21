@@ -1,5 +1,5 @@
 import React from 'react';
-import AppItem from './AppItem';
+import AppCell from './AppCell';
 
 const propTypes = {
   apps: React.PropTypes.arrayOf(
@@ -13,13 +13,13 @@ class AppList extends React.Component {
   }
 
   render() {
-    const appItems = this.props.apps.map((appData) =>
-      <AppItem app={appData} key={appData.key} />
+    const appCells = this.props.apps.map((appData) =>
+      <AppCell app={appData} key={appData.key} />
     );
 
     return (
       <div className="apps">
-        { appItems }
+        { appCells }
       </div>
     );
   }

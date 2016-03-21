@@ -13,7 +13,7 @@ const defaultProps = {
   },
 };
 
-class AppItem extends React.Component {
+class AppCell extends React.Component {
   static methodsAreOk() {
     return true;
   }
@@ -28,7 +28,7 @@ class AppItem extends React.Component {
   }
 }
 
-AppItem.propTypes = propTypes;
-AppItem.defaultProps = defaultProps;
+AppCell.propTypes = propTypes;
+AppCell.defaultProps = defaultProps;
 
-export default AppItem;
+export default AppCell;
