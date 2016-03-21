@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Header from './Views/Header';
-import AppList from './Views/AppList/AppList';
-import Footer from './Views/Footer';
+import Header from '../Views/Header';
+import AppList from '../Views/AppList/AppList';
+import Footer from '../Views/Footer';
 
-import appsData from './Data/AppsData';
+import appsData from '../Data/AppsData';
 
 class Main extends React.Component {
   static methodsAreOk() {
