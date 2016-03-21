@@ -4,11 +4,7 @@ import Header from './Header';
 import AppList from './AppList/AppList';
 import Footer from './Footer';
 
-const propTypes = {
-  mainInfo: React.PropTypes.shape({
-    apps: React.PropTypes.array.isRequired,
-  }),
-};
+import appsData from './Data/AppsData';
 
 class Main extends React.Component {
   static methodsAreOk() {
@@ -19,13 +15,11 @@ class Main extends React.Component {
     return (
       <div>
         <Header />
-        <AppList apps={this.props.mainInfo.apps} />
+        <AppList apps={appsData} />
         <Footer />
       </div>
     );
   }
 }
-
-Main.propTypes = propTypes;
 
 export default Main;
