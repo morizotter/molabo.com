@@ -1,8 +1,5 @@
 import React from 'react';
-
-const propTypes = {
-  title: React.PropTypes.string.isRequired,
-};
+import appData from './Data/AppData';
 
 class Header extends React.Component {
   static methodsAreOk() {
@@ -12,12 +9,11 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <h1>{this.props.title}</h1>
+        <h1>{appData.title}</h1>
+        <p>{appData.description}</p>
       </div>
     );
   }
 }
-
-Header.propTypes = propTypes;
 
 export default Header;

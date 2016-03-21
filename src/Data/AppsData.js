@@ -1,4 +1,4 @@
-const apps = [
+const appsData = [
   {
     key: '0',
     name: 'app aaaabb',
@@ -16,4 +16,4 @@ const apps = [
   },
 ];
 
-export default apps;
+export default appsData;
