@@ -1,5 +1,5 @@
 const appData = {
-  title: 'Molabo apps a',
+  title: 'Molabo apps',
   description: 'This is molabo apps.',
   author: {
     name: 'Naoki Morita',
