@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 import apps from './Data/Apps';
 
-export default function Index() {
+export default function Main() {
   return (
     <div>
       <Header />

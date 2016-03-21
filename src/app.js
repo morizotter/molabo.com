@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Index from './Index';
+import Main from './Main';
 
 ReactDOM.render(
-  <Index />,
+  <Main />,
   document.getElementById('app')
 );
