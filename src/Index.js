@@ -1,13 +1,16 @@
 import React from 'react';
+
 import Header from './Header';
-import Apps from './AppList/AppList';
+import AppList from './AppList/AppList';
 import Footer from './Footer';
+
+import apps from './Data/Apps';
 
 export default function Index() {
   return (
     <div>
       <Header />
-      <Apps />
+      <AppList apps={apps} />
       <Footer />
     </div>
   );

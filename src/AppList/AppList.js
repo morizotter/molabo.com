@@ -1,19 +1,30 @@
 import React from 'react';
 import AppItem from './AppItem';
-import apps from '../Data/Apps';
 
-export default function AppList() {
-  const appItems = apps.map((app) =>
-    <AppItem info={app.info} key={app.key} />
-  );
+const propTypes = {
+  apps: React.PropTypes.arrayOf(
+    React.PropTypes.any.isRequired
+  ).isRequired,
+};
 
-  apps.forEach((app) => {
-    console.log(app);
-  });
+class AppList extends React.Component {
+  static methodsAreOk() {
+    return true;
+  }
 
-  return (
-    <div className="apps">
-      { appItems }
-    </div>
-  );
+  render() {
+    const appItems = this.props.apps.map((app) =>
+      <AppItem info={app.info} key={app.key} />
+    );
+
+    return (
+      <div className="apps">
+        { appItems }
+      </div>
+    );
+  }
 }
+
+AppList.propTypes = propTypes;
+
+export default AppList;

@@ -2,7 +2,7 @@ const apps = [
   {
     key: '0',
     info: {
-      name: 'app a',
+      name: 'app aaaa',
     },
   },
   {
