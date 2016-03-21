@@ -6,8 +6,9 @@ import Footer from './Footer';
 
 const propTypes = {
   mainInfo: React.PropTypes.shape({
+    title: React.PropTypes.string.isRequired,
     apps: React.PropTypes.array.isRequired,
-  }).isRequired,
+  }),
 };
 
 class Main extends React.Component {
@@ -18,7 +19,7 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header title={this.props.mainInfo.title} />
         <AppList apps={this.props.mainInfo.apps} />
         <Footer />
       </div>

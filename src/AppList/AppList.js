@@ -13,8 +13,8 @@ class AppList extends React.Component {
   }
 
   render() {
-    const appItems = this.props.apps.map((app) =>
-      <AppItem info={app.info} key={app.key} />
+    const appItems = this.props.apps.map((appData) =>
+      <AppItem app={appData} key={appData.key} />
     );
 
     return (

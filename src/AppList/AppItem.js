@@ -1,13 +1,14 @@
 import React, { PropTypes } from 'react';
 
 const propTypes = {
-  info: React.PropTypes.shape({
+  app: React.PropTypes.shape({
     name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
   }),
 };
 
 const defaultProps = {
-  info: {
+  app: {
     name: 'app',
   },
 };
@@ -20,7 +21,8 @@ class AppItem extends React.Component {
   render() {
     return (
       <div>
-        {this.props.info.name}
+        <h3>{this.props.app.name}</h3>
+        <p>{this.props.app.description}</p>
       </div>
     );
   }

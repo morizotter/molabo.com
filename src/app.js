@@ -5,6 +5,7 @@ import Main from './Main';
 import appsData from './Data/Apps';
 
 const mainInfoData = {
+  title: 'Molabo apps',
   apps: appsData,
 };
 

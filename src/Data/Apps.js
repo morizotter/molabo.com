@@ -1,21 +1,18 @@
 const apps = [
   {
     key: '0',
-    info: {
-      name: 'app aaaa',
-    },
+    name: 'app aaaabb',
+    description: 'hi this is my apps',
   },
   {
     key: '1',
-    info: {
-      name: 'app b',
-    },
+    name: 'app bb',
+    description: 'hi this is my apps',
   },
   {
     key: '2',
-    info: {
-      name: 'app cccc',
-    },
+    name: 'app c',
+    description: 'hi this is my apps',
   },
 ];
 
