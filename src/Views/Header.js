@@ -1,5 +1,5 @@
 import React from 'react';
-import appData from './Data/AppData';
+import appData from '../Data/AppData';
 
 const style = {
   header: {

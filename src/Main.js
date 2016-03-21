@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from './Header';
-import AppList from './AppList/AppList';
-import Footer from './Footer';
+import Header from './Views/Header';
+import AppList from './Views/AppList/AppList';
+import Footer from './Views/Footer';
 
 import appsData from './Data/AppsData';
 
