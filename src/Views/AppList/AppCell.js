@@ -15,14 +15,14 @@ const defaultProps = {
 
 const style = {
   cell: {
-    padding: '10px',
     margin: '0px',
   },
   content: {
-    backgroundColor: 'lightGray',
+    padding: '10px',
   },
   h3: {
-    margin: '0px',
+    marginTop: '0px',
+    marginBottom: '10px',
   },
 };
 
@@ -34,7 +34,7 @@ class AppCell extends React.Component {
   render() {
     return (
       <div className="col-sm-4" style={style.cell}>
-        <div style={style.content}>
+        <div className="panel panel-default" style={style.content}>
           <h3 style={style.h3}>{this.props.app.name}</h3>
           <p>{this.props.app.description}</p>
         </div>

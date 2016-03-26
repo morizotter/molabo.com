@@ -2,7 +2,7 @@ const appsData = [
   {
     key: '0',
     name: 'app aaaabb',
-    description: 'hi this is my apps',
+    description: 'こんにちは　僕はもらぼです。僕もモラボです。',
   },
   {
     key: '1',
