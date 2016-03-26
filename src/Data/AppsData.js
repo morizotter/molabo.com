@@ -14,6 +14,16 @@ const appsData = [
     name: 'app c',
     description: 'hi this is my apps',
   },
+  {
+    key: '3',
+    name: 'app d',
+    description: 'hi this is my apps',
+  },
+  {
+    key: '4',
+    name: 'app e',
+    description: 'hi this is my apps yo',
+  },
 ];
 
 export default appsData;
