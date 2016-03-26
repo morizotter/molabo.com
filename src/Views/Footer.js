@@ -2,8 +2,17 @@ import React from 'react';
 import appData from '../Data/AppData';
 
 const style = {
-  footer: {
-    backgroundColor: 'lightGray',
+  body: {
+    height: '200px',
+    padding: '10px',
+    backgroundColor: '#efefef',
+  },
+  list: {
+    marginBottom: '0px',
+  },
+  a: {
+    width: '400px',
+    textAlign: 'center',
   },
 };
 
@@ -14,11 +23,13 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <div className="footer row" style={style.footer}>
-        <ul>
-          <li><p>{appData.author.name}</p></li>
-          <li><p>{appData.author.twitterUrl}</p></li>
-        </ul>
+      <div className="footer row" style={style.body}>
+        <div className="center-block" style={style.a}>
+          <ul className="list-inline" style={style.list}>
+            <li><p>{appData.author.name}</p></li>
+            <li><p><a href="{appData.author.twitterUrl}">@morizotter</a></p></li>
+          </ul>
+        </div>
       </div>
     );
   }

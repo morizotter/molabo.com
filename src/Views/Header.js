@@ -3,12 +3,14 @@ import appData from '../Data/AppData';
 
 const style = {
   body: {
-    backgroundColor: '#ff00ff',
+    height: '44px',
     padding: '10px',
+    backgroundColor: '#0277BD',
   },
   title: {
     fontSize: '22px',
     fontWeight: 'normal',
+    color: '#eeeeee',
     margin: '0px',
   },
 };

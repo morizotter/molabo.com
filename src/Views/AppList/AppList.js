@@ -11,8 +11,8 @@ const style = {
   body: {
     marginLeft: '-5px',
     marginRight: '-5px',
-    marginTop: '10px',
-    marginBottom: '10px',
+    marginTop: '20px',
+    marginBottom: '20px',
   },
 };
 
