@@ -13,6 +13,19 @@ const defaultProps = {
   },
 };
 
+const style = {
+  cell: {
+    padding: '0px',
+    margin: '0px',
+  },
+  content: {
+    backgroundColor: 'lightGray',
+  },
+  h3: {
+    margin: '0px',
+  },
+};
+
 class AppCell extends React.Component {
   static methodsAreOk() {
     return true;
@@ -20,9 +33,11 @@ class AppCell extends React.Component {
 
   render() {
     return (
-      <div>
-        <h3>{this.props.app.name}</h3>
-        <p>{this.props.app.description}</p>
+      <div className="col-sm-4" style={style.cell}>
+        <div style={style.content}>
+          <h3 style={style.h3}>{this.props.app.name}</h3>
+          <p>{this.props.app.description}</p>
+        </div>
       </div>
     );
   }

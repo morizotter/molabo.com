@@ -14,7 +14,7 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <div className="footer" style={style.footer}>
+      <div className="footer row" style={style.footer}>
         <ul>
           <li><p>{appData.author.name}</p></li>
           <li><p>{appData.author.twitterUrl}</p></li>

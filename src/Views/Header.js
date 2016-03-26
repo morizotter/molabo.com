@@ -2,8 +2,14 @@ import React from 'react';
 import appData from '../Data/AppData';
 
 const style = {
-  header: {
+  body: {
     backgroundColor: '#ff00ff',
+    padding: '10px',
+  },
+  title: {
+    fontSize: '22px',
+    fontWeight: 'normal',
+    margin: '0px',
   },
 };
 
@@ -14,9 +20,8 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="header" style={style.header} >
-        <h1>{appData.title}</h1>
-        <p>{appData.description}</p>
+      <div className="header row" style={style.body}>
+        <h1 style={style.title}>{appData.title}</h1>
       </div>
     );
   }

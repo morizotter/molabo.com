@@ -7,7 +7,7 @@ const appsData = [
   {
     key: '1',
     name: 'app bb',
-    description: 'hi this is my apps',
+    description: 'hi this is my apps asdfasdf asdsadafafasfs sdfasasd afadafaasfa sdfasdasfdasfdadf asfasfasafa asfdfa ',
   },
   {
     key: '2',

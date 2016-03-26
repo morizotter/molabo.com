@@ -7,6 +7,15 @@ const propTypes = {
   ).isRequired,
 };
 
+const style = {
+  body: {
+    marginLeft: '-5px',
+    marginRight: '-5px',
+    marginTop: '10px',
+    marginBottom: '10px',
+  },
+};
+
 class AppList extends React.Component {
   static methodsAreOk() {
     return true;
@@ -18,7 +27,7 @@ class AppList extends React.Component {
     );
 
     return (
-      <div className="apps">
+      <div className="apps row" style={style.body}>
         { appCells }
       </div>
     );
