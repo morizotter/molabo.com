@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Header from '../../Views/Header';
 import EyeCatch from './EyeCatch';
 import AppList from '../../Views/AppList/AppList';
 import Footer from '../../Views/Footer';
@@ -15,7 +14,6 @@ class Main extends React.Component {
   render() {
     return (
       <div className="container-fluid">
-        <Header />
         <EyeCatch />
         <AppList apps={appsData} />
         <Footer />

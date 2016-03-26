@@ -5,7 +5,7 @@ const style = {
     background: '#efefef',
     height: '400px',
     overflow: 'hidden',
-    backgroundImage: 'url(' + './src/Resource/sensei.png' + ')',
+    // backgroundImage: 'url(' + './src/Resource/stopwatch.png' + ')',
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
   },

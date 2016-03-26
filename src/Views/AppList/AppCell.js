@@ -18,7 +18,7 @@ const style = {
     margin: '0px',
   },
   content: {
-    padding: '10px',
+    padding: '16px',
     minHeight: '200px',
   },
   h3: {
