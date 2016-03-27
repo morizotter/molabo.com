@@ -1,11 +1,12 @@
 import React from 'react';
+const eyeCatch = require('../../Resource/popon.jpg');
 
 const style = {
   content: {
     background: '#efefef',
     height: window.innerHeight - 240,
     overflow: 'hidden',
-    backgroundImage: 'url(' + './src/Resource/popon.jpg' + ')',
+    backgroundImage: `url(${eyeCatch})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     position: 'relative',

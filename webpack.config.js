@@ -3,6 +3,7 @@ module.exports = {
   output: {
     path: `${__dirname}/dist`,
     filename: 'bundle.js',
+    publicPath: '/dist/',
   },
   module: {
     loaders: [
@@ -22,7 +23,7 @@ module.exports = {
         loader: 'url?limit=10000&mimetype=application/octet-stream',
       },
       { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml' },
-      { test: /\.(png|jpg|jpeg|gif)$/, loader: 'file?name=images/[name].[ext]' },
+      { test: /\.(png|jpg|jpeg|gif)$/, loader: 'url?limit=8192' },
     ],
   },
   resolve: {
