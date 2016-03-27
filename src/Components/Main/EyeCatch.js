@@ -3,9 +3,9 @@ import React from 'react';
 const style = {
   content: {
     background: '#efefef',
-    height: '400px',
+    height: window.innerHeight - 240,
     overflow: 'hidden',
-    backgroundImage: 'url(' + './src/Resource/wetty.jpg' + ')',
+    backgroundImage: 'url(' + './src/Resource/popon.jpg' + ')',
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     position: 'relative',

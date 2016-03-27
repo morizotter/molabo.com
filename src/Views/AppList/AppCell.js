@@ -36,7 +36,7 @@ class AppCell extends React.Component {
 
   render() {
     return (
-      <div className="col-sm-4 col-md-3" style={style.cell}>
+      <div className="col-sm-4 col-md-4 col-lg-3" style={style.cell}>
         <div className="panel panel-default" style={style.content}>
           <h3 style={style.h3}>{this.props.app.name}</h3>
           <p>{this.props.app.description}</p>
