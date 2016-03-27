@@ -16,6 +16,8 @@ const defaultProps = {
 const style = {
   cell: {
     margin: '0px',
+    paddingLeft: '10px',
+    paddingRight: '10px',
   },
   content: {
     padding: '16px',
