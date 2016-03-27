@@ -4,6 +4,7 @@ const propTypes = {
   app: React.PropTypes.shape({
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
   }),
 };
 
@@ -20,12 +21,18 @@ const style = {
     paddingRight: '10px',
   },
   content: {
-    padding: '16px',
-    minHeight: '200px',
+    minHeight: '300px',
   },
   h3: {
-    marginTop: '0px',
-    marginBottom: '10px',
+    margin: '10px',
+  },
+  image: {
+    margin: '10px',
+    width: '100px',
+    height: '100px',
+  },
+  description: {
+    margin: '10px',
   },
 };
 
@@ -36,10 +43,11 @@ class AppCell extends React.Component {
 
   render() {
     return (
-      <div className="col-sm-4 col-md-4 col-lg-3" style={style.cell}>
+      <div className="col-sm-6 col-md-4 col-lg-3" style={style.cell}>
         <div className="panel panel-default" style={style.content}>
+          <img src={this.props.app.image} alt="Image" className="img-rounded" style={style.image}  />
           <h3 style={style.h3}>{this.props.app.name}</h3>
-          <p>{this.props.app.description}</p>
+          <p style={style.description}>{this.props.app.description}</p>
         </div>
       </div>
     );

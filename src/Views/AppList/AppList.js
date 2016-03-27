@@ -14,6 +14,9 @@ const style = {
     marginTop: '20px',
     marginBottom: '20px',
   },
+  row: {
+    margin: '0px auto',
+  },
 };
 
 class AppList extends React.Component {
@@ -27,8 +30,12 @@ class AppList extends React.Component {
     );
 
     return (
-      <div className="apps row" style={style.body}>
-        { appCells }
+      <div className="container">
+        <div className="apps row" style={style.body}>
+          <div className="row" style={style.row}>
+            { appCells }
+          </div>
+        </div>
       </div>
     );
   }

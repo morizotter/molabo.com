@@ -4,7 +4,7 @@ const eyeCatch = require('../../Resource/popon.jpg');
 const style = {
   content: {
     background: '#efefef',
-    height: window.innerHeight - 240,
+    height: '300px',
     overflow: 'hidden',
     backgroundImage: `url(${eyeCatch})`,
     backgroundSize: 'cover',
@@ -38,10 +38,12 @@ class EyeCatch extends React.Component {
 
   render() {
     return (
-      <div className="row">
-        <div style={style.content}>
-          <div style={style.title}>
-            <h1 style={style.title.h1}>molabo apps</h1>
+      <div className="container-fluid">
+        <div className="row">
+          <div style={style.content}>
+            <div style={style.title}>
+              <h1 style={style.title.h1}>molabo apps</h1>
+            </div>
           </div>
         </div>
       </div>
